@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" sizes="16x16" href="images/logo/beer.png">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quantico&display=swap" rel="stylesheet">  
+
+
+    <title>Mon portfolio</title>
+</head>
+
+<body>
+
+    <header id="navbar" class="nav">
+        <center>
+            <h1>Mon portfolio</h1>
+        </center>
+
+        <a href="index.html">Accueil</a>
+        <div class="dropmenu">
+            <button>Présentation</button>
+            <div class="content">
+                <a href="pages/Mon_profil.html">Mon profil</a>
+                <br>
+                <a href="index.html">Ma filière</a>
+            </div>
+        </div>
+        <a href="pages/Compétences.html">Compétences</a>
+        </div>
+        <div class="dropmenu">
+            <button>Situations</button>
+            <div class="content">
+                <a href="pages/Description_Situation_1.html">Application légère</a>
+                <br>
+                <a href="pages/Description_Situation_2.html">Application lourde</a>
+                <br>
+                <a href="pages/DocumentationSituation.html">Documentation de situation</a>
+            </div>
+        </div>
+        <a href="https://feedly.com/">Veille technologie</a>
+        <a href="pages/Certifications.html">Certifications</a>
+
+
+
+        <a class="icon" onclick="myFunction()">&#9776;</a>
+    </header>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("navbar");
+            if (x.className === "nav") {
+                x.className += " responsive";
+            } else {
+                x.className = "nav";
+            }
+        }
+    </script>
+
+    <div class="contenu">
+        <br>
+        <div class="GBloc">
+            <div class="Bloc1">
+                <h1>
+                    Ma filière
+                </h1>
+                <br>
+                Le Brevet de Technicien Supérieur Services informatique aux Organisations (SIO) 
+                s’adresse à ceux qui souhaitent se former en deux ans aux métiers 
+                d’administrateur réseau ou de développeur pour intégrer directement 
+                le marché du travail ou continuer des études dans le domaine de l’informatique.
+                <br>
+                <br>
+                <img src="pictures/bts_sio_landscape.jpg" alt="" width="300px">
+                <br>
+                <h4>
+                    Option SLAM :
+                </h4>
+                <p><br>
+                L’option SLAM est destinée aux étudiants qui s’orientent vers les métiers liés à la conception et la maintenance de programmes applicatifs.
+                <p><br>
+                Grâce à des cours spécifiques, les diplômés seront capables de gérer un parc informatique ou d’administrer un réseau au sein d’une entreprise.
+                <p><br>
+                Ils pourront également gérer l’intégration, la sécurisation et la configuration des serveurs, mais aussi des postes clients et des équipements d’interconnexion.
+                <p><br>
+                En ayant également suivi des cours plus généraux, l’étudiant disposera de solides connaissances en informatique générale, mais aussi en : télécommunications, 
+                systèmes d’information, bases de données, outils de développement des applications, etc. 
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footerBis">
+            <div>
+                <h2>
+                    Mon portfolio
+                </h2>
+                <br><br><br><br>
+                <a href="pages/MentionsLegales.html"><h4>Mentions légales</h4></a>                
+            </div>
+            <br>
+            <div>
+                <h3>Navigation</h3>
+                <br>
+                <ul>
+                    <li>
+                        <a href="index.html">Accueil</a>
+                    </li>
+                    <br>                  
+                    <li>
+                        <h4>Présentation</h4>
+                        <a href="pages/Mon_profil.html">Mon profil</a>                    
+                    </li>
+                    <li>
+                        <a href="index.html">Ma filière</a>
+                    </li>
+                    <br>
+                    <li> 
+                        <h4><a href="">Compétences</a></h4>
+                    </li>                
+                    <br>
+                    <li>
+                        <h4>Situations</h4>
+                        <a href="#">Application légère</a>
+                    </li>                                      
+                    <li>
+                        <a href="#">Application lourde</a>
+                    </li> 
+                    <br>                                      
+                    <li>
+                        <h4><a href="#">Veille technologie</a></h4>
+                    </li>
+                    <br>                                      
+                    <li>
+                        <h4><a href="#">Certifications</a></h4>
+                    </li>                
+                </ul>
+            </div>
+            <div>
+                <h3>Me contacter</h3>
+                <br>
+                LACIME Melvin 
+                <br>
+                <br>
+                Apprenti développeur
+                <br>
+                    <br>
+                    <a href="melvin.lacime@gmail.com">melvin.lacime@gmail.com</a>
+                    <br>
+                </div>
+            <div>
+                <h3>
+                    Où me trouver ?
+                </h3>
+                <br>
+                Lycée Pardailhan <p></p>
+                57 Chem. de Baron,
+                <br>
+                32000 AUCH
+                <br>
+                <br>
+                <br>
+                <a href="https://www.google.com/maps/place/Lyc%C3%A9e+Polyvalent+Pardailhan/@43.6535972,0.5758229,16.71z/data=!4m5!3m4!1s0x12a982c22a7ba7c5:0xfb79927b0b8423d!8m2!3d43.6532187!4d0.5778572">Google Maps</a>
+            </div>
+        </div>
+        <a href="http://copyright.be" target="_blank">Copyright © 2022 mon-portfolio.fr - Tous droits réservés</a>
+    </footer>
+</body>
+
+</html>

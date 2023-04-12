@@ -1,0 +1,278 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Quantico', sans-serif;
+  box-sizing: border-box;
+  color: rgb(47, 235, 241);
+}
+
+
+header{
+  /*background: url('../images/bandeau-resize.jpg') no-repeat;*/
+  background: rgb(117, 117, 117);
+  height: 70px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  color: gb(255, 192, 57);
+  position: relative;
+  flex-direction: row;
+}
+
+.nav h1 {
+  padding: 10px;
+  margin-left: 5px;
+}
+
+header > a,
+header button{
+  color: rgb(47, 235, 241);
+  margin: 0 15px;
+  font-size: 1.3em;
+}
+
+header button{
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+header .dropmenu {
+  position: relative;
+  height: 100%;
+  display: flex;
+}
+
+header .dropmenu .content {
+  display: none;
+}
+
+header .dropmenu:hover .content {
+  display: block;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  background-color: rgb(117, 117, 117);
+  color: gb(255, 192, 57);
+  top: 70px;
+  width: 140%;
+  padding: 12px 15px;
+  box-sizing: border-box;
+}
+
+header .content a {
+  color: gb(255, 192, 57);
+}
+
+header .icon{
+  display: none;
+}
+
+@media(max-width:1142px){
+  header > a,
+  header button{
+    display: none;
+  }
+
+  header .icon{
+    display: block;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    width: 5% !important;
+    top: 20px;
+    padding: 0 !important;
+  }
+
+  header.responsive > a{
+    padding: 10px 0;
+  }
+
+  header.responsive > a,
+  header.responsive .dropmenu {
+    display: block;
+    width: 100%;
+  }
+
+  header.responsive button {
+    display: block;
+    padding: 10px 0;
+  }
+
+
+  header{
+    flex-direction: column;
+    min-height: 70px;
+    height: 100%;
+    align-items: flex-start;
+  }
+
+  header .dropmenu:hover .content {
+   position: relative;
+   width: 100%;
+   top: 0;
+   padding-left: 30px;
+  }
+
+  .contenu .GBloc .Bloc1 img{
+    width:100%;
+    padding: 10px;
+  }
+
+  .contenu .GBloc .Bloc1 .droite img{
+    width: 160px;
+  }
+}
+
+body{
+  /*background: linear-gradient(50deg, rgb(214, 160, 42) 0, rgb(196, 125, 33) 100%); */
+  background-color: rgb(77, 77, 77);
+}
+
+
+.alinea{
+  text-indent: 40px;
+}
+
+iframe{
+  width: 100%;
+  background-color: rgb(47, 235, 241);
+  padding:5px;
+}
+
+input{
+  background-color: rgb(82, 82, 82);
+  border-color: rgb(47, 235, 241);
+  border-radius: 10px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  width: 150px;
+  height: 30px
+}
+
+textarea{
+  background-color: rgb(82, 82, 82);
+  border-color: rgb(47, 235, 241);
+  border-radius: 10px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  width: 400px;
+  height: 100px;
+  padding: 10px;
+}
+
+.connexion{
+  width: 150px;
+  height: 40px
+}
+
+.contenu {
+  color: rgb(47, 235, 241);
+}
+
+.GBloc{
+  width: 50%;
+  height: 300%;
+  border-style: none;
+  border-width: 8px;
+  margin-left: 25%;
+  border-radius: 10px;
+  padding: 10px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 50px;
+}
+
+
+@media screen and (max-width:1050px){
+  .contenu .GBloc {
+    padding: 0px;
+    width: 80%;
+  }
+}
+
+.Bloc1{
+  background-color: rgb(0, 0, 0, 0.5);
+  color: rgb(47, 235, 241);
+  width: auto;
+  height: auto;
+  border-style: solid;
+  border-color: rgb(47, 235, 241);
+  border-width: 5px;
+  /*margin-right: 50%;*/
+  border-radius: 10px;
+  padding: 20px;
+  text-align: justify;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  box-shadow: 10px 7px 7px rgb(59, 242, 255);
+}
+
+.Bloc1 .droite img{
+  height: 300px;
+  width: 200px;
+}
+
+.droite > img{
+  width: 200px;
+}
+
+img{
+  margin-top: 10px;
+  margin-bottom: 25px;
+  width: 100%;
+}
+
+/* Footer */
+footer{
+  padding: 10px;
+  background-color: rgb(117, 117, 117);
+}
+
+/* FooterBis */
+
+.footerBis{
+  background-color: rgb(117, 117, 117); /* #323953 */
+  height: 20%;
+  margin-top: 100px;
+  margin: 0cm;
+  padding: 50px 0;
+  padding-bottom: 30px;
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  flex-direction: row;
+}
+
+.footerBis img{
+  width: 15%;
+}
+
+.footerBis h3 {
+  text-decoration: underline;
+}
+
+@media screen and (max-width:1130px){
+  .footerBis{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 50px 0 0px 0;
+  }
+  .footerBis > div{
+    margin-bottom: 40px;
+  }
+
+  .footerBis img{
+    margin-top: 0px;
+    margin-bottom: 10px;
+    margin-left: 0px;
+  }
+
+  .contenu .GBloc{
+    padding: 0px;
+    margin-left: 10%;
+  }
+}
